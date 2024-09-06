@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea; /* Light grey background for the entire page */
+    margin: 0;
+}
+
+.calculator {
+    background: #ffffff; /* Clean white background for the calculator */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow for depth */
+    padding: 20px;
+    width: 220px; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: right;
+    border: 1px solid #cccccc; /* Light grey border for subtlety */
+    border-radius: 4px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    height: 50px; 
+    background-color: #f5f5f5; /* Very light grey background for input */
+}
+
+/* Placeholder color styling */
+input[type="text"]::placeholder {
+    color: #888888; /* Medium grey color for placeholder text */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #b5b5b5; /* Slightly darker grey border for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    background: #f0f0f0; /* Light grey background for buttons */
+    color: #333333; /* Dark grey text for readability */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background: #d0d0d0; /* Slightly darker grey for hover effect */
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button-container button {
+    font-size: 18px;
+    padding: 15px;
+}
+
+.delete-btn {
+    grid-column: span 2; /* Delete button spans two columns */
+    background: #ff6b6b; /* Soft red background for the delete button */
+    color: #ffffff; /* White text for contrast */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.delete-btn:hover {
+    background: #ff4c4c; /* Darker red on hover */
+}
